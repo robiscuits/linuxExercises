@@ -11,3 +11,4 @@ fi
 for i in $(find $dir -type f -size $n); do
     rm "$i"
 done
+
