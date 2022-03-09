@@ -1,10 +1,10 @@
 #!/bin/bash
 
-if [[ ($# -eq 0) || ($# -gt 2) ]]; then # Recall: "-ne" checks integer inequality.
-    echo "usage: $0 <column> [file.csv]" 1>&2 # write error message to stderr (below)
+if [[ ($# -eq 0) || ($# -gt 2) ]]; then 
+    echo "usage: $0 <column> [file.csv]" 1>&2 
     exit 0
 
-elif [[ $# -eq 1 ]]; then # Recall: "-ne" checks integer inequality.
+elif [[ $# -eq 1 ]]; then # Recall: 
     column=$1
     file=/dev/stdin
 else
